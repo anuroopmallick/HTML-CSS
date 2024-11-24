@@ -63,6 +63,13 @@
             git --version
             
             git checkout -b feature/new-feature
+
+            git checkout development
+            git merge feature/new-feature 
+
+            git flow feature start a-new-feature 
+            git flow feature finish a-new-feature 
+            git push origin development
         </p>
     </div>
 </body>
