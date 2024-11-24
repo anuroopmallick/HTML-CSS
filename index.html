@@ -61,11 +61,30 @@
         <h2>Git Commands</h2>
         <p>
             git --version
-            
-            git checkout -b feature/new-feature
 
-            git checkout development
-            git merge feature/new-feature 
+            git config -g user.name "anuroopmallick"
+            git config -g use.email "amnuroopmallick1@gmail.com"
+
+            git init 
+            git status 
+            git add . 
+            git commit -m "I have done this so many times"
+            git status 
+            git log 
+            git branch -m main 
+            git remote add origin "http"
+            git push origin main 
+
+            git checkout -b development (creates new branch)
+            git checkout -b feature/new-feature 
+            git checkout development (changes to development branch)
+
+            git push 
+            git pull 
+            git checkout {branch_name}
+            git rebase {branch_name} 
+            git merge {branch_name}
+            git push origin {branch_name}
 
             git flow feature start a-new-feature 
             git flow feature finish a-new-feature 
