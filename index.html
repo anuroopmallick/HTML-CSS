@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name ="description" content="Seo content goes here"></meta>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="#" >Home</a>
-        <a href="#" >About</a>
-        <a href="#" >Project</a>
-        <a href="#" >Blog</a><br>
-    </nav>
-
-    <header>
-        <img src="profile.jpg" alt="profile-img" />
-        <h1>Anuroop Mallick</h1>
-        <h2>I'm a Frontend <br> Developer</h2>
-        <p>Description:</p>
-        <button type="">DOWNLOAD RESUME</button>
-    </header>
-
-    <section>
-        <img src="profile.jpg" alt="person-img" />
-        <h1>About Me</h1>
-        <h3>Hello! I'm Anuroop Mallick. You can call me Rick as well.</h3>
-        <p>I started coding due the the vast amount of resources it provides and to use it to build my own business. I have been working as a front end developer at Cleverex Technology for 2 years and 8 month now. I am looking forward to build my own ideas into applications. </p>
-        <div><a href="#" > <img src="Logo1.jpg" alt="Logo1" /> </a><a href="#" ><img src="Logo2.jpg" alt="Logo2" /></a><a href="#" ><img src="profile.jpg" alt="Logo3" /></a><a href="#" ><img src="Logo1" alt="Logo4" /></a></div>
-    </section>
-
-    <section>
-        <h1>My Projects</h1>
-        <p>I mostly work with HTML, CSS, Javascript</p>
-        <div>
-            <img src="projectq.jpg" alt="Project1"/>
-            <h2>Project 1</h2>
-            <p>Project 1 description</p>
-        </div>
-        <div>
-            <img src="project2.jpg" alt="Project2" />
-            <h2>Project 2</h2>
-            <p>Project 2 description</p>
-        </div>
-        <div>
-            <img src="project3.jpg" alt="Project3" />
-            <h2>Project 3</h2>
-            <p>Project 3 description</p>
-        </div>
-    </section>
-
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Publication Date</th>
+          <th>Pages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>April 10, 1925</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>July 11, 1960</td>
+          <td>281</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>July 8, 1949</td>
+          <td>326</td>
+        </tr>
+        <tr>
+          <td>Pride and Prejudice</td>
+          <td>Jane Austen</td>
+          <td>January 28, 1813</td>
+          <td>282</td>
+        </tr>
+        <tr>
+          <td>The Catcher in the Rye</td>
+          <td>J.D Salinger</td>
+          <td>July 16, 1951</td>
+          <td>277</td>
+        </tr>
+      </tbody>
+    </table>
     <div>
-          <!-- Write solution here -->
-        <a href="www.interviewbit.com" target="self" >Interview Bit</a><br>
-        <a href="www.scaler.com" target="_blank" >Scaler</a>
+      <h1>Survey Form</h1>
+      <form>
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" required /><br />
+        <label for="age">Age: </label>
+        <input id="age" type="number" name="age" required /><br />
+        <label>Gender: </label>
+        <input id="male" type="radio" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="female" /><br />
+        <label for="female">Female</label>
+        <label for="food">Favourite Food:</label>
+        <select id="food" name="food" required>
+          <option value="pizza">Pizza</option>
+          <option value="chinese">Chinese Food</option>
+          <option value="indian">Indian Food</option>
+          <option value="mexican">Mexican Food</option></select
+        ><br />
+        <label for="cook">Do you like to cook?</label>
+        <input id="cook" type="checkbox" name="cook" />
+        <label for="cook">Yes</label><br />
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments"></textarea><br />
+        <input type="submit" value="submit" />
+      </form>
+
+      <section>
+        <h1>Get in Touch</h1>
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Name" /><br />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea><br />
+          <input type="submit" name="submit" />
+        </form>
+      </section>
     </div>
-
-
-    <div>
-        <h2>Git Commands</h2>
-        <p>
-            git --version
-
-            git config -g user.name "anuroopmallick"
-            git config -g use.email "amnuroopmallick1@gmail.com"
-
-            git init 
-            git status 
-            git add . 
-            git commit -m "I have done this so many times"
-            git status 
-            git log 
-            git branch -m main 
-            git remote add origin "http"
-            git push origin main 
-
-            git checkout -b development (creates new branch)
-            git checkout -b feature/new-feature 
-            git checkout development (changes to development branch)
-
-            git push 
-            git pull 
-            git checkout {branch_name}
-            git rebase {branch_name} 
-            git merge {branch_name}
-            git push origin {branch_name}
-
-            git flow feature start a-new-feature 
-            git flow feature finish a-new-feature 
-            git push origin development
-        </p>
-    </div>
-</body>
+  </body>
 </html>
+l
