@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* for multiple classes specificity depends on the selector order here it is the case of m1 and m2  */
+      .m1.m2 {
+        color: greenyellow;
+      }
+      .m2 {
+        color: aqua;
+      }
+
+      .m1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="m2 m1">Selevt me</h1>
+      <h1 class="m1">Selevt me also</h1>
+    </header>
+    <body class="m2">
+      <p>Not me</p>
+    </body>
+  </body>
+</html>
