@@ -1,0 +1,33 @@
+<!-- Important things that I did not know about css before are the following 
+
+
+Inline vs block vs inline-block :
+1. block level elements take the whole row space 
+2. inline elements take only the required space 
+3. Inline-Block takes the required space but we can also provide height and width to the element 
+
+Margin collapse : 
+When placing two boxes in column and the upper box has margin-botton = 30px and the bottom has margin top 20px 
+The total margin between the top and bottom box will be the max of margin provided in this case 30px. 
+This however does not happen when placed side by side. In that case it takes the sum of margin. 
+
+Css Positioning: 
+1. Static - Elements are positioned in the normal document flow.
+   CSS Property: position: static; (default, no need to specify explicitly).
+   Use Case: When you don't need to adjust an element's position.
+2. relative - Positioned relative to its normal position.
+   CSS Property: position: relative;
+   Behavior: The element remains in the document flow but can be shifted using top, right, bottom, or left.
+   Use Case: Fine-tuning or using as a reference point for absolutely positioned child elements.
+3. absolute - Positioned relative to the nearest positioned ancestor (relative, absolute, or fixed). 
+   If no ancestor is positioned, it is relative to the viewport.
+   Behavior: Removed from the document flow; other elements ignore its space.
+   Use Case: Precise placement of elements.
+4. fixed - Positioned relative to the viewport (does not move when scrolling).
+   Behavior: Removed from the document flow.
+   Use Case: Sticky headers, footers, or sidebars that remain visible.
+5. sticky- A hybrid of relative and fixed. It behaves like relative until a scroll threshold is reached, then it becomes fixed.
+   CSS Property: position: sticky;
+   Behavior: Sticks within its parent container.
+   Use Case: Sticky headers or navigation bars
+6. z-index  -->
