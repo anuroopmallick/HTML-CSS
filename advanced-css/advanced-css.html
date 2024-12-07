@@ -1,0 +1,59 @@
+<!-- styles are applied based on the whats comes later - This is the defination of
+cascading in css The style that comes later is applied
+
+
+Specificity in css - Based on this hierarchy style is applied 
+1. id 
+2. class 
+3. element  -->
+
+<!-- More specific the score then they will be prioritised  -->
+
+<!-- !impoprtant 
+1. follows cascading rule regardless of specificity value 
+2. use only once in a selector 
+3. if it is used twice then specificity rule will be followed  -->
+
+<!-- Inheritance  -->
+<!-- 1. allows styles to be inherited from parent  -->
+<!-- 2. Margin, padding, border ,width cannot be inherited  -->
+<!-- 3. For inherited properties in css check the link -> https://www.codecademy.com/resources/docs/css/inheritance  -->
+
+<!-- Positioning 
+1. static 
+2. relative - positioned based on its own position, example: shifts the book in the bookshelf
+3. absolute - positioned based on its closest positioned ancestor or parent container , example : removes book from book shelf -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #fruits {
+        color: red;
+      }
+
+      ul {
+        color: aqua;
+      }
+
+      ul#fruits {
+        color: chartreuse !important;
+      }
+
+      ul#fruits li.mango {
+        /* color: blueviolet; */
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="fruits">
+      <li>Apple</li>
+      <li class="mango">Mango</li>
+      <li>Pineapple</li>
+    </ul>
+  </body>
+</html>
